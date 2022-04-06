@@ -9,34 +9,44 @@ html {
 
 body {
     margin: 0;
+    padding-top: 94.4px;
 
     display: flex;
     flex-direction: column;
 }
 body > * {
     /* set attributes of child elements */
-    margin: 10px 0 10px 0;
-    padding: 10px;
+    margin: .5rem 0;
+    padding: 1rem;
     background-color: white;
 }
 
 #header {
     margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: .5rem;
     background-color: var(--blue2);
+    color: white;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+}
+#header a {
+    color: white;
+}
+#header-flex-wrapper {
+    background-color: var(--blue2);
+    color: white;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-#header a {
-    color: black;
+    padding-right: 2rem;
 }
 
 #title-container {
-    height: 70px;
-
     display: grid;
-
     grid-template-areas:
         "image title"
         "image text"
@@ -54,10 +64,12 @@ body > * {
 }
 #header-title {
     grid-area: title;
+    text-shadow: black 2px 2px 2px;
 }
 #header-text {
     grid-area: text;
 }
+
 #nav-bar {
     display: flex;
     flex-direction: row;
@@ -66,6 +78,14 @@ body > * {
 }
 #nav-bar p {
     padding: 10px;
+}
+
+#source {
+    margin-top: 0;
+    padding: 0 1rem;
+}
+#source p {
+    margin: .5rem auto;
 }
 
 #banner {
