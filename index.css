@@ -9,7 +9,9 @@ html {
 
 body {
     margin: 0;
-    padding-top: 94.4px;
+
+    /* compensate for sticky header height */
+    padding-top: 86.4px;
 
     display: flex;
     flex-direction: column;
@@ -24,6 +26,7 @@ body > * {
 #header {
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: .5rem;
     padding-bottom: .5rem;
     background-color: var(--blue2);
     color: white;
@@ -80,12 +83,12 @@ body > * {
     padding: 10px;
 }
 
-#source {
+#sub-header {
     margin-top: 0;
     padding: 0 1rem;
 }
-#source p {
-    margin: .5rem auto;
+#sub-header p {
+    margin: .4rem auto;
 }
 
 #banner {
